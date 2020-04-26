@@ -1,0 +1,186 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/3fda7096-2564-42e2-b381-6f1b0589702f/ # 
+title: RetailInfoAPI
+
+/products:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+             [
+              {
+                "P_name": "pepsi"
+              },
+                {"p_name": "Coke"},
+
+                { "p_name" : "fanta"             
+              }
+             ]
+  /id:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              example: 
+                {
+                  "id": 10,
+                  "name": "Coke",
+                  "price": 5
+                }
+    put:
+      responses:
+        200:
+          body:
+            application/json:
+                example:
+                  {
+                   "id": 10,
+                    "name": "Coke",
+                  "price": 5
+                  }
+     
+    delete:
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                {
+                  "message":"product deleted"
+
+                }
+
+
+
+  post:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                  "id": 10,
+                  "name": "Coke",
+                  "price": 5
+                }
+/bills:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            examples:
+              {
+                "pro_id": 83478,
+                "price": 5,
+
+              }
+  /id:
+    get:
+      responses:
+        200:
+         body:
+          application/json:
+            examples:
+              {
+                "number_sold_item": 0001,
+                "pro_id": 93478
+              }
+    put:
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                  {
+                   "id": 10,
+                    "name": "Coke",
+                  "price": 5
+                  }
+    delete:
+      responses:
+        200:
+          body:
+            application/json:
+              examples:
+                {
+                  "message": "product deleted"
+                }
+  post:
+    responses:
+      200:
+        body:
+         application/json:
+          examples:
+            {
+              "id": 10,
+              "name": "Coke",
+              "price": 5
+              }
+/productCatagory:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            examples:
+              {
+                "id" : 12,
+                "name" : "pepsi",
+                "price" : 9
+              }
+  /id:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              examples:
+                {
+                  "id" : 13,
+                  "name" : "fanta",
+                  "price": 4
+                }
+    put:
+      responses:
+        200:
+          body:
+            application/json:
+                example:
+                  {
+                   "id": 10,
+                    "name": "Coke",
+                  "price": 5
+                  }
+    delete:
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                {
+                  "message":"product deleted"
+
+                }
+  post:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                  "id": 10,
+                  "name": "Coke",
+                  "price": 5
+                }
+            
+    
+    
+               
+                
+            
+      
+
